@@ -1,6 +1,6 @@
 AddEventHandler('chatMessage', function(source, name, msg)
 sm = stringsplit(msg, " ");
-if sm[1] == "/reportp" then
+if sm[1] == "/report" then
 CancelEvent()
 TriggerClientEvent('chatMessage', -1, "REPORT | " .. name, {255, 0, 0}, string.sub(msg,9))
    end
